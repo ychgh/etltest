@@ -1,0 +1,29 @@
+{
+  "name": "etltest-cdk",
+  "version": "1.0.0",
+  "description": "AWS CDK infrastructure for ETL dev/test machines (Plans A, B, C)",
+  "bin": {
+    "etltest-cdk": "bin/etltest-cdk.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy:plan-a": "cdk deploy PlanAGpuStack",
+    "deploy:plan-b": "cdk deploy PlanBCpuStack",
+    "deploy:plan-c": "cdk deploy PlanCSpotStack",
+    "destroy:plan-a": "cdk destroy PlanAGpuStack",
+    "destroy:plan-b": "cdk destroy PlanBCpuStack",
+    "destroy:plan-c": "cdk destroy PlanCSpotStack",
+    "synth": "cdk synth"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "aws-cdk": "2.x",
+    "typescript": "~5.4.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.x",
+    "constructs": "^10.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+# CDK artifacts
+cdk/node_modules/
+cdk/dist/
+cdk/cdk.out/
+
+# State files created by scripts (contain instance IDs / IPs)
+.devspot-state
+.devmachine-state
+.llm-gpu-state
+
+# SSH private keys (never commit)
+*.pem
+
+# macOS
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Logs
+*.log
